@@ -22,7 +22,7 @@ function HeroSection() {
       <div className="left sm:w-5/12 w-full flex justify-center items-center mb-3 mt-2">
         <div className="box w-10/12">
           <div className="main-heading">
-            <p className="font-bold text-[45px] leading-[50px]">
+            <p className="font-bold text-[40px] leading-[50px]">
               Let Us  <span className="text-color-1">Predict</span> <br />
               Your Perfect  <span className="text-color-1">Meal</span>
             </p>
