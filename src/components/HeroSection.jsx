@@ -33,7 +33,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="right sm:w-7/12 w-full">
+      <div className="right sm:w-7/12 w-full mt-[20px] bg-red-100 sm:mt-0">
         <img src={heroImage} alt="" />
       </div>
     </div>

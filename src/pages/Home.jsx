@@ -16,7 +16,6 @@ function Home() {
  </div>
  <div className="result-section sm:w-11/12 w-full mt-4">
  <ResultSection/>
-
  </div>
   </div>;
 }
