@@ -26,7 +26,7 @@ function HeroSection() {
               Let Us  <span className="text-color-1">Predict</span> <br />
               Your Perfect  <span className="text-color-1">Meal</span>
             </p>
-            <p className="mt-2 font-semibold">Welcome to Website name, where culinary creativity meets convenience! Input your ingredients, and discover personalized dish predictions tailored to your pantry. Simplify your cooking journey with our platform. Let's transform your ingredients into delightful meals effortlessly!</p>
+            <p className="mt-2 font-semibold">Welcome to Food2Fork, where culinary creativity meets convenience! Input your ingredients, and discover personalized dish predictions tailored to your pantry. Simplify your cooking journey with our platform. Let's transform your ingredients into delightful meals effortlessly!</p>
             <div className="search-box mt-[15px]">
             
             <Serach/></div>
