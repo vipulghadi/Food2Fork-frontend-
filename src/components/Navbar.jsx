@@ -6,7 +6,7 @@ function Navbar() {
   const path=params.pathname
   
   return (
-    <div className="w-full py-5 flex justify-between sm:px-[50px] px-2 fixed top-0 z-10">
+    <div className="w-full py-5 flex justify-between sm:px-[50px] px-2 fixed top-0 z-10 bg-white">
       <div className="left">
         <h1 className="font-bold text-[22px] uppercase px-3">Logo</h1>
       </div>
