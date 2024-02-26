@@ -1,35 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImage from "../assets/hero.png";
-import Serach from "./Serach";
-import {getJson} from 'serpapi'
-function HeroSection() {
+import Search from "./Search";
+import SuggestionBox from "./SuggestionBox";
 
-  getJson({
-    q: "Cheesecake",
-    location: "Austin,Texas,United States",
-    hl: "en",
-    gl: "us",
-    api_key: "secret_api_key"
-  }, (json) => {
-    console.log(json["recipes_results"]);
-  });
+function HeroSection({suggestions}) {
+  const [matchedWords,setMatchedWords]=useState([])
+  function handleSearchBar(){
 
-
-
-
+  }
   return (
     <div className="w-full p-3 flex flex-wrap">
       <div className="left sm:w-5/12 w-full flex justify-center items-center mb-3 mt-2">
         <div className="box w-10/12">
           <div className="main-heading">
             <p className="font-bold text-[40px] leading-[50px]">
-              Let Us  <span className="text-color-1">Predict</span> <br />
-              Your Perfect  <span className="text-color-1">Meal</span>
+              Let Us <span className="text-color-1"> Predict </span> <br />
+              Your Perfect <span className="text-color-1"> Meal </span>{" "}
             </p>
-            <p className="mt-2 font-semibold">Welcome to Food2Fork, where culinary creativity meets convenience! Input your ingredients, and discover personalized dish predictions tailored to your pantry. Simplify your cooking journey with our platform. Let's transform your ingredients into delightful meals effortlessly!</p>
+            <p className="mt-2 font-semibold">
+              
+              Welcome to Food2Fork, where culinary creativity meets
+              convenience!Input your ingredients, and discover personalized dish
+              predictions tailored to your pantry.Simplify your cooking journey
+              with our platform.Let 's transform your ingredients into
+              delightful meals effortlessly!
+            </p>
             <div className="search-box mt-[15px]">
-            
-            <Serach/></div>
+              <Search handleSearchBar={handleSearchBar} setMatchedWords={setMatchedWords}/>
+              <div className="word-suggestions w-full relative">
+              <SuggestionBox/>
+              </div>
+             
+            </div>
           </div>
         </div>
       </div>

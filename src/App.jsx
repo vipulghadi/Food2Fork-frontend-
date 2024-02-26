@@ -8,16 +8,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-    <div className="w-full relative">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route  path="/" element={<Home/>}/>
-          <Route path="/docs"  element={<AboutProject/>}/>
-          <Route  path="/about-me" element={<AboutMe/>}/>
-        </Routes>
-      </BrowserRouter>
-      </div>
+      <div className="w-full relative">
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+           
+            <Route path="/" element={<Home />} />{" "}
+            <Route path="/docs" element={<AboutProject />} />{" "}
+            <Route path="/about-me" element={<AboutMe />} />{" "}
+          </Routes>{" "}
+        </BrowserRouter>{" "}
+      </div>{" "}
     </>
   );
 }
