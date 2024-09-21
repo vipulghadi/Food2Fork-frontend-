@@ -3,9 +3,6 @@ import axios from "axios";
 
 function AboutProject() {
     
-       
-
-  
     return <div className=" w-full mt-[60px] p-3 flex flex-col justify-center items-center" > 
     <div className="docs sm:w-11/12 mb-5 ">
     <h1 className="text-[20px] font-bold border-b-2 mb-2"> Docs</h1>

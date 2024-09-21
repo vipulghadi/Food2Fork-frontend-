@@ -8,7 +8,7 @@ const foodApi = {
 
     getRecipeImage: async(query) => {
         const params = {
-            per_page: 2, // Number of results per page
+            per_page: 1, // Number of results per page
             page: 1, // Page number
         };
         try {
